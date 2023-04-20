@@ -34,7 +34,7 @@ cloudinary.config({
 });
 
 const corsOptions = {
-    origin: 'https://main--glowing-youtiao-7d965c.netlify.app',
+    origin: ["https://internshala-server-production.up.railway.app", 'http://localhost:3000'],
     credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200,
 }

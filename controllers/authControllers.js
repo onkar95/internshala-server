@@ -74,6 +74,7 @@ exports.GetSingleUser = CatchAsyncError(async (req, res, next) => {
     res.status(200).send(user);
 
 })
+
 exports.DeleteUser = CatchAsyncError(async (req, res, next) => {
     const { id } = req.params
     const users = await User.findByIdAndDelete(id);
