@@ -1,7 +1,7 @@
 const express = require('express');
-// const auth = require('./routes/userRoutes')
-// const car = require('./routes/carRoutes')
-// const reserve = require('./routes/rentRoutes')
+const auth = require('./routes/userRoutes')
+const car = require('./routes/carRoutes')
+const reserve = require('./routes/rentRoutes')
 
 const cors = require('cors');
 const app = express();
@@ -43,9 +43,9 @@ app.use(express.json())
 app.use(cors(corsOptions))
 app.use(fileUpload());
 
-// app.use('/auth', auth)
-// app.use('/car', car)
-// app.use('/rent', reserve)
+app.use('/auth', auth)
+app.use('/car', car)
+app.use('/rent', reserve)
 
 
 
